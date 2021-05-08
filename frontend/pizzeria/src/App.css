@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Roboto&family=Ubuntu&display=swap');
+.App {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+/*  logo version 1
+.logo-container {
+    border-top: 3px green solid;
+    border-bottom: 3px red solid;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px/30px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.logo-span {
+    border-top: 2px green solid;
+    border-bottom: 2px red solid;
+    font-size: 0.7em;
+    line-height: 1.8;
+}
+
+.logo {
+    padding: 10px;
+    font-size: 1.5em;
+} */
+
+
+/*confirmation*/
+
+.success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 450px;
+    height: 420px;
+    padding: 2em;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 5px solid tomato;
+    color: rgb(95, 91, 91);
+    font-family: 'Ubuntu', sans-serif;
+    /* needed styles for the overlay */
+    z-index: 10;
+    /* keep on top of other elements on the page */
+    outline: 9999px solid rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:768px) {
+    .success {
+        min-width: 60%;
+        min-height: 70%;
+    }
+    .success p {
+        font-size: 0.6em;
+    }
+    .success h1+p {
+        line-height: 1em;
+    }
+    #btnSub {
+        width: 30%;
+        font-size: 50%;
+    }
+}
+
+.success h1 {
+    font-family: 'Asap', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    color: tomato;
+    margin-bottom: 1.3em;
+}
+
+.success p {
+    line-height: 0.5em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.success p span {
+    font-weight: 600;
+    font-size: 1.15em;
+    padding-left: 0.1em;
+}
+
+#goodbye {
+    line-height: 1.4em;
+    font-size: 1.1em;
+}
+
+.success hr {
+    border-top: tomato 1px solid;
+    width: 200px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.success button {
+    border-radius: 15px;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    color: tomato;
+    border: tomato 2px solid;
+    background-color: white;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.success button:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+.success button:active {
+    background-color: tomato;
+    color: white;
+    outline: none;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 5em;
+    background-color: rgb(168, 168, 91);
+    margin-top: 3em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media(max-width:768px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+    .social {
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    .social svg {
+        margin-bottom: 2px;
+    }
+}
+
+footer p {
+    padding: 15px 15px 0 15px;
+    font-size: 1em;
+}
+
+.social {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social svg {
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.social svg:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#facebook,
+#instagram,
+#twitter {
+    fill: white;
+}
+
+
+/*submit form*/
+
+.Sub {
+    height: 595px;
+    width: 450px;
+}
+
+@media(max-width:768px) {
+    .Sub {
+        width: 60%;
+        height: 80%;
+    }
+    .Sub h1 {
+        font-size: 90%;
+    }
+    .formSub {
+        width: 80%;
+    }
+    .formSub p {
+        opacity: 0;
+    }
+    .btnSub {
+        width: 100%;
+        font-size: 40%;
+    }
+    .formSub input {
+        width: 60%;
+    }
+    .formSub input::placeholder {
+        font-size: 80%;
+    }
+}
+
+.formSub {
+    margin-bottom: 1em;
+}
+
+.formSub p {
+    text-align: left;
+    line-height: 0;
+    font-size: 1.1em;
+}
+
+.formSub input {
+    border: 1px tomato solid;
+    border-radius: 5px;
+    width: 95%;
+    padding: 0.5em;
+    color: tomato;
+    font-size: 1.1em;
+}
+
+.formSub input:focus {
+    outline: none;
+}
+
+ ::placeholder {
+    color: rgb(95, 91, 91);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+#date {
+    font-size: 1.3em;
+}
+
+.error {
+    color: olive;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+
+/*Sub buttons*/
+
+button[type="reset"] {
+    margin-right: 25px;
+}
+
+
+/*Booking btn*/
+
+.btnOpen {
+    display: flex;
+    justify-content: center;
+}
+
+.btnOpen button {
+    border-radius: 15px;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    color: tomato;
+    border: tomato 2px solid;
+    background-color: white;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.btnOpen button:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+.btnOpen button:active {
+    background-color: tomato;
+    color: white;
+    outline: none;
+}
+
+
+/*menu*/
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 3em;
+}
+
+#menuTitle {
+    margin-bottom: 2em;
+}
+
+.menu-container h3 {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 1.6em;
+    line-height: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.menu-container h3 a {
+    background-color: tomato;
+    padding: .8em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-container h3 a:hover {
+    opacity: 0.85;
+}
+
+@media (max-width:768px) {
+    .menu-container {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .menu-container h3 {
+        font-size: 80%;
+    }
+    .menu-container h3 a {
+        background-color: olive;
+    }
+    .food-item {
+        font-size: 90%;
+    }
+}
+
+.food-item p:first-of-type {
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: rgb(168, 168, 91);
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food-item {
+    flex: 50%;
+    line-height: 0.5em;
+    color: rgb(95, 91, 91);
+}
+
+.menu-container hr {
+    border-top: tomato 1px solid;
+    width: 60%;
+}
+
+@media(max-width: 1200px) {
+    .food-item {
+        line-height: 1em;
+    }
+}
+
+@media(max-width: 768px) {
+    .food-item {
+        flex: 100%;
+    }
+    .menu-container hr {
+        border-top: olive 1px solid;
+        width: 55%;
+    }
+}
+
+
+/*hero*/
+
+.hero-container {
+    background: url("https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    letter-spacing: .2em;
+    font-size: 5em;
+    font-family: 'Asap', sans-serif;
+    text-shadow: 5px 3px 3px tomato;
+}
+
+.landing-container h1 {
+    text-align: center;
+}
+
+#hero-subtext {
+    position: absolute;
+    font-family: 'Asap', sans-serif;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 1px black;
+}
+
+#hero-subtext::before,
+#hero-subtext::after {
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid white;
+    width: 3.5rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+.hero-subtext hr {
+    width: 20%;
+}
+
+@media(max-width:796px) {
+    .hero-container {
+        font-size: 80%;
+        background: url("https://images.unsplash.com/photo-1600835768553-0cc19062f912?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=332&q=80") no-repeat center center;
+        background-size: cover;
+    }
+    #hero-subtext::before,
+    #hero-subtext::after {
+        display: none;
+    }
+    .landing-container h1 {
+        font-size: 3em;
+        top: 25%;
+        text-shadow: 5px 2px 2px rgb(95, 91, 91);
+        ;
+    }
+}
+
+
+/*about*/
+
+.about-container h3 a {
+    background-color: tomato;
+    padding: .8em;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.about-container h3 a:hover {
+    opacity: 0.85;
+}
+
+.about-container h3 {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 1.6em;
+    line-height: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.about-container p {
+    text-align: center;
+    margin: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(95, 91, 91);
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.about-container hr {
+    border-top: tomato 1px solid;
+    width: 60%;
+}
+
+@media (max-width:768px) {
+    .about-container h3 {
+        font-size: 80%;
+    }
+    .about-container h3 a {
+        background-color: olive;
+    }
+    .about-container h3 span {
+        font-size: 80%;
+    }
+    .about-container p {
+        font-size: 90%;
+    }
+    .about-container hr {
+        border-top: olive 1px solid;
+        width: 55%;
+    }
+}
+
+
+/*nav*/
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+}
+
+.nav.colorChange {
+    background-color: rgba(168, 168, 91, 0.9);
+}
+
+#navOpen {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.logo-title {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 1.8em;
+    line-height: 0.5em;
+    color: white;
+    text-shadow: 2px 1px 1px gray;
+}
+
+.logo-container a {
+    text-decoration: none;
+    margin-left: 1em;
+    cursor: default;
+}
+
+.hamburger-icon {
+    fill: tomato;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: .6em;
+    border-radius: 50%;
+    border: tomato 2px solid;
+    margin-right: 2em;
+}
+
+.hamburger-icon:hover {
+    fill: white;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+@media(max-width:796px) {
+    .nav {
+        font-size: 70%;
+        line-height: 1.8em;
+        justify-content: space-around;
+    }
+    #navOpen {
+        width: 80%;
+        height: 80%;
+        font-size: 70%;
+    }
+    .logo-container a {
+        margin-left: 0;
+    }
+    .hamburger-icon {
+        padding: .4em;
+    }
+    .hamburger-icon {
+        fill: white;
+        background-color: olive;
+        border-color: olive;
+    }
+    .hamburger-icon:hover {
+        fill: white;
+        background-color: olive;
+        border-color: olive;
+    }
+}
+
+
+/*sidebar*/
+
+.nav-menu {
+    background-color: rgb(245, 239, 239);
+    width: 180px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    border-radius: 5px;
+}
+
+.nav-menu.active {
+    right: 0;
+    transition: 350ms;
+}
+
+.nav-menu-items a {
+    text-decoration: none;
+    color: rgb(95, 91, 91);
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.nav-menu-items li {
+    transition: .7s all;
+}
+
+.nav-menu-items li:hover {
+    background-color: tomato;
+    width: 80%;
+    padding-left: 0.3em;
+    color: white;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+#navbar-toggle {
+    width: 60%;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2em;
+    background-color: tomato;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: rgb(95, 91, 91);
+    transition: 1s all;
+}
+
+#navbar-toggle:hover {
+    color: white;
+}
+
+@media(max-width:768px) {
+    .nav-menu {
+        height: 20vh;
+        width: 13em;
+    }
+    #navbar-toggle {
+        background-color: olive;
+        color: white;
+    }
+    .nav-menu-items li:hover {
+        background-color: olive;
+    }
+}

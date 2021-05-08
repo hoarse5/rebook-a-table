@@ -1,0 +1,242 @@
+{
+    "menu": [{
+        "antipasti": [{
+                "id": 1,
+                "name": "FOCACCIA",
+                "price": "$5",
+                "description": "Selection of Italian Cheeses and Cured Meats Served with Focaccia"
+            },
+            {
+                "id": 2,
+                "name": "TAGLIERE",
+                "price": "$19",
+                "description": "Pizza Bread, Coarse Sea Salt, E.V.O.O., Rosemary"
+            },
+            {
+                "id": 3,
+                "name": "INSALATINA",
+                "price": "$8",
+                "description": "Mixed Greens, Chrery Tomatoes, E.V.O.O.Balsamic Dressing"
+            },
+            {
+                "id": 4,
+                "name": "TONNO E CECI",
+                "price": "$10",
+                "description": "Chickpeas, Tuna, Capers, Red Onions, Garlic, Lemon E.V.O.O.Dressing"
+            },
+            {
+                "id": 5,
+                "name": "BURRATA PLATE",
+                "price": "$14",
+                "description": "Fresh burrata served with arugula and cherry tomatoes"
+            },
+            {
+                "id": 6,
+                "name": "PROSCIUTTO & MOZZARELLA",
+                "price": "$15",
+                "description": "Served with a Side of Arugula Salad"
+            },
+            {
+                "id": 7,
+                "name": "BARBABIETOLE",
+                "price": "$10",
+                "description": "Roasted Beets, Apple, Whipped Goat Cheese, E.V.O.O.Dressing"
+            },
+            {
+                "id": 8,
+                "name": "RUGHETTA",
+                "price": "$10",
+                "description": "Arugula, Cherry Tomatoes, Artichokes, Shaved Parmigiano, Lemon / E.V.O.O.Dressing"
+            },
+            {
+                "id": 9,
+                "name": "SPINACI",
+                "price": "$10",
+                "description": "Baby Spinach, Ricotta, Almond, Mushrooms, Raisin, E.V.O.O.Balsamic Dressing"
+            }
+        ],
+        "pizzeRosse": [{
+                "id": 10,
+                "name": "BURRATA",
+                "price": "$19",
+                "description": "Cherry Tomatoes, Burrata, Basil, Sea Salt"
+            },
+            {
+                "id": 11,
+                "name": "MARINARA",
+                "price": "$10",
+                "description": "Tomatoes, Garlic, Basil, Oregano"
+            },
+            {
+                "id": 12,
+                "name": "ROMANA",
+                "price": "$15",
+                "description": "Tomatoes, Mozzarella, Ricotta, Capers, Oregano"
+            },
+            {
+                "id": 13,
+                "name": "VERDURE",
+                "price": "$17",
+                "description": "Tomatoes, Mozzarella, Eggplant, Caramelized Onions, Mushrooms, Basil"
+            },
+            {
+                "id": 14,
+                "name": "DIAVOLA",
+                "price": "$16",
+                "description": "Tomatoes, Mozzarella, Hot Soppressata, Olives, Basil"
+            },
+            {
+                "id": 15,
+                "name": "SALSICCIA",
+                "price": "$16",
+                "description": "Tomatoes, Mozzarella, Hot Italian Sausage, Basil"
+            },
+            {
+                "id": 16,
+                "name": "BOSCAIOLA",
+                "price": "$17",
+                "description": "Tomatoes, Mozzarella, Hot Italian Sausage, Gorgonzola, Mushrooms, Basil"
+            },
+            {
+                "id": 17,
+                "name": "PROSCIUTTO CRUDO",
+                "price": "$17",
+                "description": "Tomatoes, Mozzarella, Prosciutto di Parma, Basil"
+            },
+            {
+                "id": 18,
+                "name": "PARMIGIANA",
+                "price": "$17",
+                "description": "Tomatoes, Eggplant, Hot Soppressata, Parmigiano Reggiano, Basil"
+            },
+            {
+                "id": 19,
+                "name": "MARGHERITA",
+                "price": "$14",
+                "description": "Tomatoes, Mozzarella, Basil"
+            },
+            {
+                "id": 20,
+                "name": "REGINELLA",
+                "price": "$15",
+                "description": "Tomatoes, Cherry Tomatoes, Buffalo Mozzarella, Basil"
+            },
+            {
+                "id": 21,
+                "name": "POPEYE",
+                "price": "$15",
+                "description": "Tomatoes, Mozzarella, Ricotta, Baby Spinach"
+            },
+            {
+                "id": 22,
+                "name": "4 STAGIONI",
+                "price": "$17",
+                "description": "Tomatoes, Mozzarella, Olives, Mushrooms, Italian Ham, Artichokes, Basil"
+            },
+            {
+                "id": 23,
+                "name": "LAURA",
+                "price": "$18",
+                "description": "Tomatoes, Mozzarella, Mascarpone, Speck, Rosemary"
+            },
+            {
+                "id": 24,
+                "name": "CAPRICCIOSA",
+                "price": "$16",
+                "description": "Tomatoes, Mozzarella, Artichokes, Italian Ham, Oregano"
+            },
+            {
+                "id": 25,
+                "name": "NAPOLI",
+                "price": "$15",
+                "description": "Tomatoes, Mozzarella, Anchovies, Oregano, Basil"
+            },
+            {
+                "id": 26,
+                "name": "VALDOSTANA",
+                "price": "$18",
+                "description": "Tomatoes, Mozzarella, Fontina, Prosciutto di Parma, Sage"
+            },
+            {
+                "id": 27,
+                "name": "FRESCA",
+                "price": "$20",
+                "description": "Cherry Tomatoes, Buffalo Mozzarella, Prosciutto di Parma, Arugula (ingredients are not cooked)"
+            },
+            {
+                "id": 28,
+                "name": "CALZONE",
+                "price": "$15",
+                "description": "Tomatoes, Mozzarella, Ricotta, Italian Ham, Basil"
+            },
+            {
+                "id": 29,
+                "name": "RIPIENO",
+                "price": "$17",
+                "description": "Tomatoes, Mozzarella, Ricotta, Hot Soppressata, Hot Italian Sausage, Basil"
+            }
+        ],
+        "pizzeBianche": [{
+                "id": 30,
+                "name": "BURRATA",
+                "price": "$19",
+                "description": "Cherry tomatoes, burrata, basil, sea salt"
+            },
+            {
+                "id": 31,
+                "name": "AGLIO, OLIO",
+                "price": "$15",
+                "description": "Mozzarella, Ricotta, Garlic, Hot Chili Flakes, Basil"
+            },
+            {
+                "id": 32,
+                "name": "TARTUFATA",
+                "price": "$21",
+                "description": "Mozzarella, home - made Truffle Spread, Mushrooms, Prosciutto di Parma, Basil"
+            },
+            {
+                "id": 33,
+                "name": "4 FORMAGGI",
+                "price": "$16",
+                "description": "Mozzarella, Smoked Mozzarella, Parmigiano, Gorgonzola, Basil"
+            },
+            {
+                "id": 34,
+                "name": "RADICCHIO",
+                "price": "$17",
+                "description": "Mozzarella, Smoked Mozzarella, Hot Italian Sausage, Radicchio, Balsamic Reduction"
+            },
+            {
+                "id": 35,
+                "name": "TALEGGIO",
+                "price": "$19",
+                "description": "Mozzarella, Taleggio, Prosciutto di Parma, Parmigiano Reggiano, Basil"
+            },
+            {
+                "id": 36,
+                "name": "AUTUNNO",
+                "price": "$20",
+                "description": "Mozzarella, Smoked Mozzarella, Ricotta, Brussel Sprouts, Speck, Sage, Truffle Oil"
+            }
+        ],
+        "dessert": [{
+                "id": 37,
+                "name": "CANNOLI",
+                "price": "$7",
+                "description": "Ricotta cheese, Chocolate"
+            },
+            {
+                "id": 38,
+                "name": "ZEPPOLE",
+                "price": "$5",
+                "description": "Deep fried Italian doughnut"
+            },
+            {
+                "id": 39,
+                "name": "TIRAMISÙ",
+                "price": "$7",
+                "description": "Ladyfingers, Espresso, Kahlua, Mascarpone"
+            }
+        ]
+    }]
+}
