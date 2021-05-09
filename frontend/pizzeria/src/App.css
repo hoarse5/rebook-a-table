@@ -7,34 +7,6 @@
 }
 
 
-/*  logo version 1
-.logo-container {
-    border-top: 3px green solid;
-    border-bottom: 3px red solid;
-    width: 320px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px/30px;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.logo-span {
-    border-top: 2px green solid;
-    border-bottom: 2px red solid;
-    font-size: 0.7em;
-    line-height: 1.8;
-}
-
-.logo {
-    padding: 10px;
-    font-size: 1.5em;
-} */
-
-
 /*confirmation*/
 
 .success {
@@ -49,9 +21,7 @@
     border: 5px solid tomato;
     color: rgb(95, 91, 91);
     font-family: 'Ubuntu', sans-serif;
-    /* needed styles for the overlay */
     z-index: 10;
-    /* keep on top of other elements on the page */
     outline: 9999px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -340,6 +310,10 @@ button[type="reset"] {
     opacity: 0.85;
 }
 
+.dessert {
+    margin-bottom: 3.5em;
+}
+
 @media (max-width:768px) {
     .menu-container {
         margin-right: 1em;
@@ -503,6 +477,16 @@ button[type="reset"] {
     line-height: 2em;
     letter-spacing: 1px;
     font-size: 1.2em;
+}
+
+.about-container strong {
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+}
+
+.about-container span {
+    font-style: italic;
+    font-weight: 600;
 }
 
 .about-container hr {
